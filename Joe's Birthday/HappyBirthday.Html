@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>HappyBirthday</title>
+    <link rel="stylesheet" href="HappyBirthday.css">
+</head>
+
+<body>
+    <div class="envelope">
+        <div class="back"></div>
+        <div class="letter">
+            <img class="sticker" src="chibiSticker.png">
+            <div class="Message">
+                <p>Enjoy your day Pren! <br>
+                    instead of goodluck Godbless <br>
+                    ikaw nagsabi sakin nito kaya Godbless
+                    sa bawat gagawin mo. <br> You are Song of Solomon 4:7<3</p>
+            </div>
+            <img class="tulips" src="purpleTulips.png">
+        </div>
+        <div class="front"></div>
+        <div class="top"></div>
+        <div class="shadow"></div>
+        <div class="Greetings">
+            <h2>Happy Happy Birthday Joe Joe!</h2>
+        </div>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="James Arthur - Say You Won't Let Go  Piano Cover with Strings (with PIANO SHEET).mp3" type="audio/mpeg">
+      </audio>
+</body>
+
+</html>
+<script>
+    alert("Click mo yung envelope.");
+
+    document.querySelector(".envelope").addEventListener("click", function () {
+    const music = document.getElementById("bg-music");
+    music.play();
+  });
+</script>
